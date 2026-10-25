@@ -1,306 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>google</title>
-  
-  <script src="https://kit.fontawesome.com/6b5ad81318.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <title>Google search results</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-
-<body>
-  <div class="design1">
-    
-  
-  
-  <div class="head">
-    
-    <div class="list">
-      
-      
-
-   <div class="icon">
-      
-      <span id="menu">&#9776;</span>
-      
+<body class="bg-body-tertiary">
+  <header class="border-bottom border-secondary-subtle">
+    <div class="container-fluid px-3 px-lg-4 py-3">
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu" aria-label="Open navigation menu">
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+        <a class="navbar-brand fw-semibold fs-3 mb-0" href="#" aria-label="Google home">Google</a>
+        <form class="flex-grow-1 ms-lg-3" action="https://www.google.com/search" method="get" role="search">
+          <div class="input-group">
+            <input class="form-control form-control-lg" type="search" name="q" placeholder="Search Google..." aria-label="Search Google">
+            <button class="btn btn-primary px-4" type="submit">Search</button>
+          </div>
+        </form>
+        <img class="rounded-circle object-fit-cover d-none d-sm-block" src="img1.jpg" width="44" height="44" alt="User account">
+      </div>
     </div>
-      <div style="display: none;" id="list1" class="parent">
-        <span style="float:right;color: red;" onclick="document.getElementById('list1').style.display ='none';" id="cancel">&times;</span>
-      <br><br>
-      <ul>
-        <li>Services</li>
-        <li>Industry</li>
-        <li>World news</li>
-        
-        <li>Military</li>
-        <li>Artificial intelligence</li>
-        <li>Wars</li>
-        <li>Islam</li>
-        <li>Hygemony</li>
-        <li>Western media</li>
-          <li>The Pope</li>
-        <li>Somalia</li>
-        <li>Yemen war</li>
-        <li>Zionism</li>
-        <li>Judaism</li>
-        <li>Spying and espionage</li>
-        
-        
-        
+  </header>
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+    <div class="offcanvas-header border-bottom border-secondary-subtle">
+      <h2 class="offcanvas-title fs-5" id="siteMenuLabel">Explore topics</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+    </div>
+    <nav class="offcanvas-body p-0" aria-label="Topics">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Services</li>
+        <li class="list-group-item">Industry</li>
+        <li class="list-group-item">World news</li>
+        <li class="list-group-item">Military</li>
+        <li class="list-group-item">Artificial intelligence</li>
+        <li class="list-group-item">Wars</li>
+        <li class="list-group-item">Islam</li>
+        <li class="list-group-item">Hegemony</li>
+        <li class="list-group-item">Western media</li>
+        <li class="list-group-item">The Pope</li>
+        <li class="list-group-item">Somalia</li>
+        <li class="list-group-item">Yemen war</li>
+        <li class="list-group-item">Zionism</li>
+        <li class="list-group-item">Judaism</li>
+        <li class="list-group-item">Spying and espionage</li>
       </ul>
-      
+    </nav>
+  </div>
+
+  <main class="container-lg py-3 py-md-4">
+    <nav class="mb-4 overflow-auto" aria-label="Search result categories">
+      <ul class="nav nav-underline flex-nowrap">
+        <li class="nav-item"><a class="nav-link active text-nowrap" aria-current="page" href="#">All</a></li>
+        <li class="nav-item"><a class="nav-link text-nowrap" href="#">News</a></li>
+        <li class="nav-item"><a class="nav-link text-nowrap" href="#">Books</a></li>
+        <li class="nav-item"><a class="nav-link text-nowrap" href="#">Images</a></li>
+        <li class="nav-item"><a class="nav-link text-nowrap" href="#">Videos</a></li>
+        <li class="nav-item"><a class="nav-link text-nowrap" href="#">Maps</a></li>
+        <li class="nav-item"><a class="nav-link text-nowrap" href="#">Search Tools</a></li>
+      </ul>
+    </nav>
+
+    <section class="row g-3" aria-label="Search results">
+      <div class="col-12 col-lg-8">
+        <article class="card border-secondary-subtle mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle object-fit-cover" src="font.png" width="48" height="48" alt="">
+              <div>
+                <h2 class="h6 mb-0">Google Fonts</h2>
+                <a class="small link-secondary text-decoration-none" href="https://fonts.google.com">https://fonts.google.com</a>
+              </div>
+            </div>
+            <h3 class="h5"><a class="link-info text-decoration-none" href="https://fonts.google.com">Google Fonts</a></h3>
+            <p class="card-text text-body-secondary mb-3">Making the web more beautiful, fast and open through great typography.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-sm btn-outline-secondary" href="https://fonts.google.com/knowledge">Fonts knowledge</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://fonts.google.com/about">About us</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://fonts.google.com">Fonts</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://m3.material.io/styles/typography/overview">Material Design and Fonts</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card border-secondary-subtle mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle object-fit-cover" src="bloq.png" width="48" height="48" alt="">
+              <div>
+                <h2 class="h6 mb-0">Creative Bloq</h2>
+                <a class="small link-secondary text-decoration-none" href="https://www.creativebloq.com">https://www.creativebloq.com</a>
+              </div>
+            </div>
+            <h3 class="h5"><a class="link-info text-decoration-none" href="https://www.creativebloq.com">The best Google Fonts for designers</a></h3>
+            <p class="card-text text-body-secondary mb-0">28 Mar 2023 — The best Google Fonts are a fantastic resource for designers. There are lots of them, they're free to download, and you can use them in your projects.</p>
+          </div>
+        </article>
+
+        <article class="card border-secondary-subtle mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle object-fit-cover" src="w3school.jpg" width="48" height="48" alt="">
+              <div>
+                <h2 class="h6 mb-0">W3Schools</h2>
+                <a class="small link-secondary text-decoration-none" href="https://www.w3schools.com">https://www.w3schools.com</a>
+              </div>
+            </div>
+            <h3 class="h5"><a class="link-info text-decoration-none" href="https://www.w3schools.com/w3css/w3css_fonts.asp">W3.CSS Google Fonts</a></h3>
+            <p class="card-text text-body-secondary mb-3">Very easy to use with only CSS and HTML. Use external font libraries like Google Fonts in all modern browsers.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-sm btn-outline-secondary" href="https://www.w3schools.com">W3Schools Fonts</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://www.w3schools.com/css">CSS</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://www.w3schools.com/html">HTML tutorial</a>
+              <a class="btn btn-sm btn-outline-secondary" href="https://www.w3schools.com/w3css">W3Schools templates</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card border-secondary-subtle mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle object-fit-cover" src="stack.png" width="48" height="48" alt="">
+              <div>
+                <h2 class="h6 mb-0">Stack Overflow</h2>
+                <a class="small link-secondary text-decoration-none" href="https://stackoverflow.com">https://stackoverflow.com</a>
+              </div>
+            </div>
+            <h3 class="h5"><a class="link-info text-decoration-none" href="https://stackoverflow.com/questions">Google Fonts not working after uploading site?</a></h3>
+            <p class="card-text text-body-secondary mb-0">27 Nov 2020 · 3 answers<br>Google Fonts on my website are working as expected only if I open the index file from my computer. When I upload it online, the fonts do not load as expected.</p>
+          </div>
+        </article>
+
+        <article class="card border-secondary-subtle mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle object-fit-cover" src="google.png" width="48" height="48" alt="">
+              <div>
+                <h2 class="h6 mb-0">Google Fonts Blog</h2>
+                <a class="small link-secondary text-decoration-none" href="https://fonts.googleblog.com">https://fonts.googleblog.com</a>
+              </div>
+            </div>
+            <h3 class="h5"><a class="link-info text-decoration-none" href="https://fonts.googleblog.com">Google Fonts Blog</a></h3>
+            <p class="card-text text-body-secondary mb-0">Why are there so few digital Nasta'liq Urdu fonts? March 28, 2023. The word “computer” کمپیوٹر in the Gulzar typeface.</p>
+          </div>
+        </article>
+
+        <article class="card border-secondary-subtle mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img class="rounded-circle object-fit-cover" src="twitter.jpg" width="48" height="48" alt="">
+              <div>
+                <h2 class="h6 mb-0">Twitter</h2>
+                <a class="small link-secondary text-decoration-none" href="https://twitter.com/googlefonts">https://twitter.com/googlefonts</a>
+              </div>
+            </div>
+            <h3 class="h5"><a class="link-info text-decoration-none" href="https://twitter.com/googlefonts">Google Fonts (@googlefonts)</a></h3>
+            <p class="card-text text-body-secondary mb-0">Google Fonts Knowledge, our project to enable designers and developers of all skill sets to choose and use type with purpose, has been nominated for an award.</p>
+          </div>
+        </article>
       </div>
 
+      <aside class="col-12 col-lg-4">
+        <section class="card border-secondary-subtle mb-3" aria-labelledby="locationHeading">
+          <div class="card-body">
+            <h2 class="h5 card-title" id="locationHeading">Kenya</h2>
+            <p class="mb-1"><span class="text-body-secondary">Nairobi County</span> · From your IP address</p>
+            <a href="#" class="link-info text-decoration-none">Update location</a>
+          </div>
+        </section>
+        <section class="card border-secondary-subtle" aria-labelledby="accountHeading">
+          <div class="card-body">
+            <h2 class="h6 card-title" id="accountHeading">Google offered in</h2>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#" class="link-info text-decoration-none">English</a>
+              <a href="#" class="link-info text-decoration-none">Swahili</a>
+            </div>
+            <hr>
+            <p class="mb-0 small text-body-secondary">lawrencemburia8@gmail.com · <a href="#" class="link-info text-decoration-none">Switch account</a></p>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
 
+  <footer class="border-top border-secondary-subtle mt-4">
+    <div class="container-lg py-3">
+      <nav class="d-flex flex-wrap gap-3" aria-label="Footer">
+        <a class="link-secondary text-decoration-none" href="#">Dark theme</a>
+        <a class="link-secondary text-decoration-none" href="#">Settings</a>
+        <a class="link-secondary text-decoration-none" href="#">Help</a>
+        <a class="link-secondary text-decoration-none" href="#">Feedback</a>
+        <a class="link-secondary text-decoration-none" href="#">Terms</a>
+      </nav>
     </div>
-    <div class="name">
-      
-      <h1>Google</h1>
-    </div>
-    
-    
-    <div class="user">
-      <img src="img1.jpg" alt="">
-      
-    </div>
-    
-    
-  </div>
-  
-  
-  <br>
-  
-  <div class="input1">
-    <form action="https://www.google.com/search" method="get">
-      
-       <input type="search" name="q" placeholder="Search google..." value=""  >
-<input type="submit"   hidden value="">
-    </form>
-   
-    
-    
-    
-    
-  </div>
-  
-  
- <div class="items">
-   
-   <ol>
-     <li>All</li>
-     <li>News</li>
-     <li>Books</li>
-      <li>Images</li>
-       <li>Videos</li>
-       <li>Maps</li>
-      <li>Search Tools</li>
-   </ol>
-   
+  </footer>
 
- </div>
-  
-  <div class="first1">
-    
-    <div class="link1">
-      <img src="font.png" alt="">
-      <p>Google fonts</p><br>
-      <a href="http://fonts.google.com">https://fonts.google.com...</a><br>
-      <br>
-      <p id="intro">Making the web more beautiful,fast and  open through great typography.</p>
-      
-    </div>
-    
-    <br /><br><br />
-    <ol>
-      
-     <li>Fonts knowledge</li>
-      <li>About us</li>
-      <li>Fonts</li>
-      <li>Material Design and Fonts</li>
-    </ol>
-    
-    
-    
-    
-    
-    
-  </div>
-  
-  </div>
-  <div class="design2">
-    
-    
-      <div class="link1">
-        <img  src="bloq.png" alt="">
-      
-      <p>Creative bloq</p><br>
-      <a href="http://www.creativebloq.com">https://www.creativebloq.com...</a><br>
-      <br>
-      <p id="intro">28 Mar 2023 — The best Google Fonts are a fantastic resource for designers. The are lots of them, they're free to download, and you can use.</p>
-      
-    </div>
-    
-    
-    
-    
-    
-    
-    
-  </div>
-  
-  
-  
-  
-  
-    <div class="design2">
-    
-    
-      <div class="link1">
-     <img  src="w3school.jpg" alt="">
-      <p>W3Schools</p><br>
-      <a href="http://www.w3schools.com">https://www.w3schools.com &#10094;w3css...</a><br>
-      <br>
-      <p id="intro">
-    W3.CSS Google Fonts
-     Very easy to use (only CSS and HTML) · Unlimited use of external font libraries (Like Google Fonts) · Works in all modern browsers.</p>
-      
-    </div>
-    
-    <ol>
-      
-     <li>W3Schools Fonts</li>
-      <li>CSS</li>
-      <li>HTML tutorial</li>
-      <li>W3Schools templates</li>
-    </ol>
-    
-    
-    
-    
-    
-  </div>
-  
-      <div class="design2">
-    
-
-      <div class="link1">
-          <img  src="stack.png" alt="">
-      <p>StackOverflow</p><br>
-      <a href="http://stackoverflow.com">https://stackoverflow.com &#10094;questions...</a><br>
-      <br>
-      <p id="intro">
-        27 Nov 2020 · 3 answers <br>
-        Why google fonts not working after uploading site? Google fonts on my website are working as expected only if I open the index file from my compuer. When I upload it on internet, font does not..
-  
-  
-</p>
-      
-    </div>
-    
-    
-    
-    
-    
-    
-    
-  </div>
-    
-      <div class="design2">
-    
-    
-      <div class="link1">
-      <img src="google.png" alt="">
-      <p>Google fonts Blog</p><br>
-      <a href="http://font.googleblog.com">https://fonts.googleblog.com &#10094;...</a><br>
-      <br>
-      <p id="intro">
-        
-        Google fonts blog <br>
-        
-        Why are there so few digital Nasta'liq Urdu fonts?  March 28, 2023.The word “computer” کمپیوٹر in the Gulzar typeface. From right to left..
-  
-  
-</p>
-      
-    </div>
-    
-    
-    
-    
-    
-    
-    
-  </div>
-    
-      <div class="design3">
-    
-
-      <div class="link1">
-            <img  src="twitter.jpg" alt="">
-      
-      <p>Twitter</p><br>
-      <a href="http://twiiter.com.googlefonts">https://twitter.com &#10094;googlefonts</a><br>
-      <br>
-      <p id="intro">
-        Google Fonts (@googlefonts)/twitter <br>
-        
-        Google Fonts Knowledge (our project to enable designers and developers of all skill sets to choose and use type with purpose) has been nominated for
-  
-</p>
-      
-    </div>
-    
-    
-    
-    
-    
-    
-    
-  </div>
-    
-    
-  <div class="footer">
-   <ul>
-     <li>Kenya</li>
-     
-     
-     
-     
-     <li id="btn"><span>Google offered in:</span>  <span>English</span><span>Swahili</span></li>
-     <li class="end">
-       <span>Nairobi County</span> - <span>From Your ip address</span> <br>
-       <br>
-       <p style="text-align:center; color: lightblue;">Update Location</p> <br>
-       <br>
-       <span>lawrencemburia8@gmail.com - Switch account</span><br>
-       
-     </li>
-     
-     <ol>
-       <li>Dark theme </li>
-      <li>Settings</li>
-      <li>Help</li>
-       <li>Feedback</li>
-       <li>Terms</li>
-     </ol>
-     
-     
-
-
-   </ul> 
-    
-    
-    
-    
-  </div>
-  
-  
-  
-  
-  
-  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
